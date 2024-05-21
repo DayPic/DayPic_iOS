@@ -32,3 +32,5 @@ fastlane/readme.md
 *.swift-version
 *.xcscmblueprint
 
+
+*.mlmodelc

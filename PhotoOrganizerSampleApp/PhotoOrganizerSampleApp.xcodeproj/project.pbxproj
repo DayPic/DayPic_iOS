@@ -14,6 +14,9 @@
 		AB9D222E2BFBC8C1009727EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9D222C2BFBC8C1009727EA /* LaunchScreen.storyboard */; };
 		AB9D22372BFBC907009727EA /* PhotoOrganizer in Frameworks */ = {isa = PBXBuildFile; productRef = AB9D22362BFBC907009727EA /* PhotoOrganizer */; };
 		AB9D223B2BFBC99E009727EA /* SampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9D223A2BFBC99E009727EA /* SampleViewModel.swift */; };
+		AB9D223E2BFCBDF1009727EA /* DownpourRx in Frameworks */ = {isa = PBXBuildFile; productRef = AB9D223D2BFCBDF1009727EA /* DownpourRx */; };
+		AB9D22412BFCCA7B009727EA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AB9D22402BFCCA7B009727EA /* SnapKit */; };
+		AB9D22502BFCD58A009727EA /* CoreMLModels in Resources */ = {isa = PBXBuildFile; fileRef = AB9D224F2BFCD58A009727EA /* CoreMLModels */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,7 @@
 		AB9D222D2BFBC8C1009727EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB9D222F2BFBC8C1009727EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB9D223A2BFBC99E009727EA /* SampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewModel.swift; sourceTree = "<group>"; };
+		AB9D224F2BFCD58A009727EA /* CoreMLModels */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CoreMLModels; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB9D22412BFCCA7B009727EA /* SnapKit in Frameworks */,
+				AB9D223E2BFCBDF1009727EA /* DownpourRx in Frameworks */,
 				AB9D22372BFBC907009727EA /* PhotoOrganizer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +64,7 @@
 		AB9D22202BFBC8C0009727EA /* PhotoOrganizerSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				AB9D224F2BFCD58A009727EA /* CoreMLModels */,
 				AB9D22382BFBC923009727EA /* App */,
 				AB9D22392BFBC92C009727EA /* SampleView */,
 				AB9D222A2BFBC8C1009727EA /* Assets.xcassets */,
@@ -103,6 +110,8 @@
 			name = PhotoOrganizerSampleApp;
 			packageProductDependencies = (
 				AB9D22362BFBC907009727EA /* PhotoOrganizer */,
+				AB9D223D2BFCBDF1009727EA /* DownpourRx */,
+				AB9D22402BFCCA7B009727EA /* SnapKit */,
 			);
 			productName = PhotoOrganizerSampleApp;
 			productReference = AB9D221E2BFBC8C0009727EA /* PhotoOrganizerSampleApp.app */;
@@ -134,6 +143,8 @@
 			mainGroup = AB9D22152BFBC8C0009727EA;
 			packageReferences = (
 				AB9D22352BFBC907009727EA /* XCLocalSwiftPackageReference "../../PhotoOrganizer_iOS" */,
+				AB9D223C2BFCBDF1009727EA /* XCRemoteSwiftPackageReference "DownpourRx" */,
+				AB9D223F2BFCCA7B009727EA /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = AB9D221F2BFBC8C0009727EA /* Products */;
 			projectDirPath = "";
@@ -149,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB9D22502BFCD58A009727EA /* CoreMLModels in Resources */,
 				AB9D222E2BFBC8C1009727EA /* LaunchScreen.storyboard in Resources */,
 				AB9D222B2BFBC8C1009727EA /* Assets.xcassets in Resources */,
 			);
@@ -313,7 +325,7 @@
 				INFOPLIST_FILE = PhotoOrganizerSampleApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -346,7 +358,7 @@
 				INFOPLIST_FILE = PhotoOrganizerSampleApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -397,10 +409,39 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		AB9D223C2BFCBDF1009727EA /* XCRemoteSwiftPackageReference "DownpourRx" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DayPic/DownpourRx.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		AB9D223F2BFCCA7B009727EA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		AB9D22362BFBC907009727EA /* PhotoOrganizer */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PhotoOrganizer;
+		};
+		AB9D223D2BFCBDF1009727EA /* DownpourRx */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB9D223C2BFCBDF1009727EA /* XCRemoteSwiftPackageReference "DownpourRx" */;
+			productName = DownpourRx;
+		};
+		AB9D22402BFCCA7B009727EA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB9D223F2BFCCA7B009727EA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
