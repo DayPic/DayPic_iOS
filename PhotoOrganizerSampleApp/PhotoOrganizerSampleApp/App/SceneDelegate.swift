@@ -18,13 +18,23 @@ final class SceneDelegate: UIResponder,
         willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
     ) {
+        
+        let categories = ["food", "scene", "human", "animal", "nature", "city", "product", "exercise", "meal", "dessert", "pet", "night", "daytime", "people", "dynamic", "static", "indoor", "outdoor"]
+        
         guard let windowScene = (scene as? UIWindowScene)
         else { return }
         self.window = UIWindow(windowScene: windowScene)
         let photoOrganizer = OpenAIClipPhotoOrganizer()
-        let viewModel = SampleViewModel(photoOrganizer: photoOrganizer)
-        self.window?.rootViewController = SampleViewController(viewModel: viewModel)
+        let viewModel = SampleViewModel(
+            photoOrganizer: photoOrganizer,
+            categories: categories
+        )
+        self.window?.rootViewController = SampleViewController(
+            viewModel: viewModel
+        )
         self.window?.makeKeyAndVisible()
+        
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
